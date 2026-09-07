@@ -138,7 +138,7 @@ export async function ensurePlayer(client, interaction) {
             guildId,
             voiceChannel: interaction.member.voice.channel.id,
             textChannel: interaction.channel.id,
-            deaf: true,
+            deaf: false,
         });
         guildData.playerChannelId = interaction.channel.id;
     }
