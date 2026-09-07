@@ -182,7 +182,7 @@ export async function joinVoiceChannel(client, interaction) {
             guildId,
             voiceChannel: channel.id,
             textChannel: interaction.channel.id,
-            deaf: true,
+            deaf: false,
         });
         guildData.playerChannelId = interaction.channel.id;
     }
